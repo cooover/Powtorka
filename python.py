@@ -42,10 +42,12 @@ else:
     print("Zmiennej nie ma ani na pierwszym, ani na grugim miejscu listy")'''
 
 # P56
+
 '''a=int(input("Podaj liczbe: "))
 print("liczba parzysta") if (a%2==0) else print("liczba nieparzysta")'''
 
 # P57
+
 '''sklep_prod={'chleb':'swiezy chleb', 'jajko':'duze jajka', 'mleko':'mleko prosto od krowy'}
 sklep_zamowienie=input("podaj co chcesz zamowic: ")
 if(sklep_zamowienie in sklep_prod):
@@ -54,8 +56,9 @@ if(sklep_zamowienie in sklep_prod):
 else:
     print("brak produktu w sklepie")
     '''
-# P58
-sklep_prod={'chleb':'swiezy chleb', 'jajko':'duze jajka', 'mleko':'mleko prosto od krowy'}
+# P58 i P59
+
+'''sklep_prod={'chleb':'swiezy chleb', 'jajko':'duze jajka', 'mleko':'mleko prosto od krowy'}
 sklep_cena={'chleb':1, 'jajko':2, 'mleko':3}
 sklep_ilosc={'chleb':20, 'jajko':100, 'mleko':30}
 suma=0
@@ -77,8 +80,61 @@ while nav!="N":
                 print("Nie mamy az tylu sztuk") 
             a = sklep_ilosc[sklep_zamowienie]=sklep_ilosc[sklep_zamowienie]-ilosc
             if(a>=0):
-                print("zostalo "+str(a)+" sztuk produktu o nazwie:"+sklep_zamowienie)
+                print("zostalo "+str(a)+" sztuk produktu o nazwie: "+sklep_zamowienie)
             print("brak produktu w sklepie")
         nav= input("Czy chcesz zamawiac dalej?: ")
 else:
-    print("Zakonczono. Suma do zaplaty: "+str(suma)+" zl.")
+    print("Zakonczono. Suma do zaplaty: "+str(suma)+" zl.")'''
+
+# P60
+
+'''cyfry={'0':'zero', '1':'jeden', '2':'dwa', '3':'trzy', '4':'cztery', '5':'piec', '6':'szesc', '7':'siedem', '8':'osiem', '9':'dziewiec'}
+napis=""
+nav=""
+print("Wcisnij Q aby zakonczyc wpisywanie")
+while nav!="Q":
+    nav=input()
+    if(nav in cyfry):
+        napis+=cyfry[nav]+" "
+print(napis)'''
+
+# P61
+'''
+for x in range (1,11):
+    for y in range (1,11):
+        print(x*y,"\t", end="")
+    print()
+'''
+# P62
+'''
+for x in range (3,10):
+    print(x*x," ",end="")
+print()
+'''
+# P63
+'''
+list=[]
+i=4
+for x in range (1,10,2):
+    list.append(x*x)
+while(i>=0):
+    print(list[i]," ",end="")
+    i-=1
+'''
+# P64
+
+list = []
+nav=""
+print("Wcisnij Q aby zakonczyc wpisywanie")
+while nav!="Q":
+    list.append(nav)
+    nav=input()   
+list.pop(0)
+szukana_liczba = input("Jakiej liczby chcesz szukac?: ")
+print(list)
+if(szukana_liczba in list):
+    print(list.index(szukana_liczba)+1)
+else:
+    print("nie ma tego na liscie")
+    
+# P65
