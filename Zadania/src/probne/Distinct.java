@@ -9,7 +9,6 @@ public class Distinct {
         for(int i=0; i<A.length; i++) {
         	Values.add(A[i]);
         }
-        
 		return Values.size();
     }
 	
