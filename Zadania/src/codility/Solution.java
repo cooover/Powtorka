@@ -1,4 +1,4 @@
-package probne;
+package codility;
 
 import java.util.HashSet;
 

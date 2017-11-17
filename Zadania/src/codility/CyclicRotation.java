@@ -1,4 +1,4 @@
-package probne;
+package codility;
 
 public class CyclicRotation {
 	public static int[] solution(int[] A, int K) {

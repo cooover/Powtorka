@@ -1,4 +1,4 @@
-package probne;
+package codility;
 
 public class CountDiv {
 

@@ -1,4 +1,4 @@
-package probne;
+package codility;
 
 	class Equi {
 		public static int solution(int A[], int N) {
